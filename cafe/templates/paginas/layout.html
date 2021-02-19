@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/estilo.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='img/favicon.ico')}}" sizes="16x16" type="image/ico">
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1 class="centraliza">CAFÉ</h1><br>
+    </header>
+    <menu>
+        <p class="centraliza">
+            <a href="{{ url_for('index') }}">HOME &nbsp &nbsp</a>
+            <a href="{{ url_for('plantio') }}"> PLANTIO &nbsp &nbsp</a>
+            <a href="{{ url_for('bebida') }}"> BEBIDA &nbsp &nbsp</a>
+            <a href="{{ url_for('graos') }}"> GRÃOS &nbsp &nbsp</a>
+            <a href="{{ url_for('contato') }}"> CONTATO </a>
+        </p>
+    </menu>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="centraliza">
+        <br>
+        Desenvolvido por aluno, Todos direitos Reservados
+        <br><br>
+    </footer>
+</body>
+<!--
+AGRADECIMENTOS:
+bebida.jpg
+https://www.publicdomainpictures.net/en/view-image.php?image=286864&picture=fresh-coffee
+
+bebeida_cafe.jpg
+https://www.goodfreephotos.com/food/cup-of-coffee-on-a-plate.jpg.php
+
+plantio_cafe.jpg
+https://www.pexels.com/photo/coffee-bean-coffee-tree-green-plants-895921/
+
+graos_cafe.jpg
+https://www.publicdomainpictures.net/en/view-image.php?image=210737&picture=roasted-coffee-beans
+-->
+</html>

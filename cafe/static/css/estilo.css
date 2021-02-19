@@ -1,0 +1,88 @@
+a:link
+{
+	color: rgb(255,249,249);
+	text-decoration: none;
+	background-color: rgb(128, 0, 0);
+}
+
+a:visited
+{
+	color: rgb(255,249,249);
+	text-decoration: none;
+	background-color: rgb(128, 0, 0);
+}
+
+
+body
+{
+	background-color: rgb(255,249,249);
+	font-family: sans-serif;
+}
+
+p, h1, h2
+{
+	color: rgb(128, 0, 0);
+}
+
+menu
+{
+	background-color: rgb(128, 0, 0);
+	padding: 6px;
+}
+
+menu p
+{
+	color: rgb(255,249,249);
+}
+
+header
+{
+	background-color: rgb(128, 0, 0);
+}
+
+header h1
+{
+	color: rgb(255,249,249);
+}
+
+footer
+{
+	background-color: rgb(128, 0, 0);
+	color: rgb(255,249,249);
+	font-size: 9px;
+	clear: both;
+}	
+
+img
+{
+	border: 1px solid rgb(128, 0, 0);
+	width: 55%;
+}
+
+.centraliza
+{
+	text-align: center;
+}
+
+.coluna
+{
+	float: left;
+	width: 31%;
+	margin: 1%;
+	text-align: justify;
+}
+
+.coluna_dupla
+{
+	float: left;
+	width: 47%;
+	margin: 1%;
+	text-align: justify;
+}
+
+.coluna_unica
+{
+	margin: 1%;
+	text-align: justify;
+	clear: both;
+}
